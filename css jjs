@@ -1,0 +1,179 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #101014;
+    color: #eeeeee;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Finger Paint', cursive;
+    color: #ff4040;
+    line-height: 1.4;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 25px;
+}
+
+h2 {
+    color: #bd65ff;
+    font-size: 24px;
+}
+
+nav {
+    background-color: #1c1c25;
+    padding: 18px;
+    display: flex;
+
+
+    justify-content: center;
+
+    gap: 35px;
+
+    flex-wrap: wrap;
+
+    border-bottom: 2px solid #8e35d4;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff4040;
+}
+
+main {
+    max-width: 1100px;
+    width: 90%;
+    margin: 30px auto;
+}
+
+
+.flex-container {
+    display: flex;
+
+    flex-wrap: wrap;
+
+
+    gap: 20px;
+
+    justify-content: center;
+
+    margin: 25px 0;
+}
+
+.flex-box {
+    background-color: #1d1d28;
+    border: 1px solid #7136a8;
+    border-radius: 12px;
+
+    padding: 22px;
+
+    flex: 1 1 280px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+
+    transition: 0.3s;
+}
+
+.flex-box:hover {
+    transform: translateY(-5px);
+    border-color: #ff4040;
+    box-shadow: 0 5px 20px rgba(255, 50, 50, 0.2);
+}
+
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+p {
+    color: #cccccc;
+}
+
+
+.character-box {
+    background: linear-gradient(145deg, #20202c, #171720);
+    border: 2px solid #7136a8;
+    border-radius: 15px;
+    padding: 20px;
+    flex: 1 1 280px;
+}
+
+
+.character-box ul {
+    list-style-type: square;
+}
+
+
+.unskilled {
+    border-color: #38bdf8;
+}
+
+.skilled {
+    border-color: #4ade80;
+}
+
+.braindead {
+    border-color: #ff4040;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: #1c1c25;
+    border-top: 2px solid #7136a8;
+    color: #aaaaaa;
+}
+
+
+@media (max-width: 600px) {
+
+    nav {
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    .flex-box,
+    .character-box {
+        flex: 1 1 100%;
+    }
+}
